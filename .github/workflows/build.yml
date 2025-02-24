@@ -27,7 +27,7 @@ jobs:
           distribution: 'zulu'
           cache: maven
       - name: Build with Maven
-        run: ${{env.MAVEN-BUILD-COMMAND}}
+        run: 'mvn -B package spring-boot:repackage --file pom.xml'
 
       - name: DockerHub login
         if: github.event_name != 'pull_request'
