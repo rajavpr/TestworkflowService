@@ -41,6 +41,6 @@ jobs:
         with:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
-          tags: 'TestworkflowService:1.0.0'
+          tags: 'testworkflowservice:1.0.0'
           labels: 'testservice'
 
