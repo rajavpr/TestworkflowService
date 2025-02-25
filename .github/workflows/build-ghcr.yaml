@@ -30,7 +30,7 @@ env:
   IMAGE_NAME: "test-work-flow-service"
 
 jobs:
-  docker:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: read
